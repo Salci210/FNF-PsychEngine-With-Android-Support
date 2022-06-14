@@ -269,14 +269,14 @@ class AndroidControlsMenu extends MusicBeatState
 
 	function reset():Void
 	{
-		vpad.buttonUp.y = FlxG.height - 66 - 116 * 3;
-		vpad.buttonUp.x = FlxG.width - 86 * 3;
-		vpad.buttonDown.y = FlxG.height - 66 - 45 * 3;
-		vpad.buttonDown.x = FlxG.width - 86 * 3;
-		vpad.buttonRight.y = FlxG.height - 66 - 81 * 3;
-		vpad.buttonRight.x = FlxG.width - 44 * 3;
-		vpad.buttonLeft.y = FlxG.height - 66 - 81 * 3;
-		vpad.buttonLeft.x = FlxG.width - 128 * 3;
+		vpad.buttonUp.y = FlxG.height - 300;
+		vpad.buttonUp.x = FlxG.width - 258;
+		vpad.buttonDown.y = FlxG.height - 195;
+		vpad.buttonDown.x = FlxG.width - 258;
+		vpad.buttonRight.y = FlxG.height - 341;
+		vpad.buttonRight.x = FlxG.width - 132;
+		vpad.buttonLeft.y = FlxG.height - 341;
+		vpad.buttonLeft.x = FlxG.width - 384;
 	}
 
 	function loadCustom():Void

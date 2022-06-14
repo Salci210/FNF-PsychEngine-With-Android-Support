@@ -45,17 +45,17 @@ class FlxHitbox extends FlxSpriteGroup
 		buttonRight = new FlxButton(0, 0);
 		buttonRightHint = new FlxSprite(0, 0);
 
-		hitbox.add(add(buttonLeft = createHitbox(0, 0, 'left', FlxColor.PURPLE)));
-		hitbox.add(add(buttonLeftHint = createHitboxHint(0, 0, 'left_hint', FlxColor.PURPLE)));
+		hitbox.add(add(buttonLeft = createHitbox(0, 0, 'left', FlxColor.PINK)));
+		add(buttonLeftHint = createHitboxHint(0, 0, 'left_hint', FlxColor.PINK));
 
-		hitbox.add(add(buttonDown = createHitbox(320, 0, 'down', FlxColor.BLUE)));
-		hitbox.add(add(buttonDownHint = createHitboxHint(320, 0, 'down_hint', FlxColor.BLUE)));
+		hitbox.add(add(buttonDown = createHitbox(320, 0, 'down', FlxColor.CYAN)));
+		add(buttonDownHint = createHitboxHint(320, 0, 'down_hint', FlxColor.CYAN));
 
-		hitbox.add(add(buttonUp = createHitbox(640, 0, 'up', FlxColor.GREEN)));
-		hitbox.add(add(buttonUpHint = createHitboxHint(640, 0, 'up_hint', FlxColor.GREEN)));
+		hitbox.add(add(buttonUp = createHitbox(640, 0, 'up', FlxColor.LIME)));
+		add(buttonUpHint = createHitboxHint(640, 0, 'up_hint', FlxColor.LIME));
 
 		hitbox.add(add(buttonRight = createHitbox(960, 0, 'right', FlxColor.RED)));
-		hitbox.add(add(buttonRightHint = createHitboxHint(960, 0, 'right_hint', FlxColor.RED)));
+		add(buttonRightHint = createHitboxHint(960, 0, 'right_hint', FlxColor.RED))
 	}
 
 	public function createHitbox(x:Float = 0, y:Float = 0, frames:String, ?color:FlxColor):FlxButton
