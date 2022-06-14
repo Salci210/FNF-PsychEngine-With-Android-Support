@@ -16,17 +16,10 @@ class FlxHitbox extends FlxSpriteGroup
 	public var hitbox:FlxSpriteGroup;
 
 	public var buttonLeft:FlxButton;
-	public var buttonLeftHint:FlxSprite;
-
 	public var buttonDown:FlxButton;
-	public var buttonDownHint:FlxSprite;
-
 	public var buttonUp:FlxButton;
-	public var buttonUpHint:FlxSprite;
-
 	public var buttonRight:FlxButton;
-	public var buttonRightHint:FlxSprite;
-	
+
 	public function new()
 	{
 		super();
@@ -34,28 +27,19 @@ class FlxHitbox extends FlxSpriteGroup
 		hitbox = new FlxSpriteGroup();
 
 		buttonLeft = new FlxButton(0, 0);
-		buttonLeftHint = new FlxSprite(0, 0);
-
 		buttonDown = new FlxButton(0, 0);
-		buttonDownHint = new FlxSprite(0, 0);
-
 		buttonUp = new FlxButton(0, 0);
-		buttonUpHint = new FlxSprite(0, 0);
-
 		buttonRight = new FlxButton(0, 0);
-		buttonRightHint = new FlxSprite(0, 0);
 
-		hitbox.add(add(buttonLeft = createHitbox(0, 0, 'left', FlxColor.PINK)));
-		add(buttonLeftHint = createHitboxHint(0, 0, 'left_hint', FlxColor.PINK));
-
+		hitbox.add(add(buttonLeft = createHitbox(0, 0, 'left', FlxColor.PURPLE)));
 		hitbox.add(add(buttonDown = createHitbox(320, 0, 'down', FlxColor.CYAN)));
-		add(buttonDownHint = createHitboxHint(320, 0, 'down_hint', FlxColor.CYAN));
-
 		hitbox.add(add(buttonUp = createHitbox(640, 0, 'up', FlxColor.LIME)));
-		add(buttonUpHint = createHitboxHint(640, 0, 'up_hint', FlxColor.LIME));
-
 		hitbox.add(add(buttonRight = createHitbox(960, 0, 'right', FlxColor.RED)));
-		add(buttonRightHint = createHitboxHint(960, 0, 'right_hint', FlxColor.RED));
+
+		hitbox.add(add(createHitboxHint(0, 0, 'left_hint', FlxColor.PURPLE)));
+		hitbox.add(add(createHitboxHint(320, 0, 'down_hint', FlxColor.CYAN)));
+		hitbox.add(add(createHitboxHint(640, 0, 'up_hint', FlxColor.LIME)));
+		hitbox.add(add(createHitboxHint(960, 0, 'right_hint', FlxColor.RED)));
 	}
 
 	public function createHitbox(x:Float = 0, y:Float = 0, frames:String, ?color:FlxColor):FlxButton
@@ -98,23 +82,8 @@ class FlxHitbox extends FlxSpriteGroup
 		hitbox = null;
 
 		buttonLeft = null;
-		buttonLeftHint = null;
-
 		buttonDown = null;
-		buttonDownHint = null;
-
 		buttonUp = null;
-		buttonUpHint = null;
-
 		buttonRight = null;
-		buttonRightHint = null;
-	}
-
-	override function update(elapsed:Float)
-	{
-		buttonLeftHint.y = buttonLeft.y;
-		buttonDownHint.y = buttonDown.y;
-		buttonUpHint.y = buttonUp.y;
-		buttonRightHint.y = buttonRight.y;
 	}
 }
