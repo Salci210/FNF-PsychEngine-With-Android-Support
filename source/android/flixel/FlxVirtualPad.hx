@@ -67,34 +67,34 @@ class FlxVirtualPad extends FlxSpriteGroup
 		switch (DPad)
 		{
 			case UP_DOWN:
-				dPad.add(add(buttonUp = createButton(0, FlxG.height - 249, 132, 127, 'up', FlxColor.GREEN)));
-				dPad.add(add(buttonDown = createButton(0, FlxG.height - 129, 132, 127, 'down', FlxColor.BLUE)));
+				dPad.add(add(buttonUp = createButton(0, FlxG.height - 249, 132, 127, 'up', FlxColor.LIME)));
+				dPad.add(add(buttonDown = createButton(0, FlxG.height - 129, 132, 127, 'down', FlxColor.CYAN)));
 			case LEFT_RIGHT:
 				dPad.add(add(buttonLeft = createButton(0, FlxG.height - 129, 132, 127, 'left', FlxColor.PURPLE)));
 				dPad.add(add(buttonRight = createButton(126, FlxG.height - 129, 132, 127, 'right', FlxColor.RED)));
 			case UP_LEFT_RIGHT:
-				dPad.add(add(buttonUp = createButton(105, FlxG.height - 243, 132, 127, 'up', FlxColor.GREEN)));
+				dPad.add(add(buttonUp = createButton(105, FlxG.height - 243, 132, 127, 'up', FlxColor.LIME)));
 				dPad.add(add(buttonLeft = createButton(0, FlxG.height - 129, 132, 127, 'left', FlxColor.PURPLE)));
 				dPad.add(add(buttonRight = createButton(207, FlxG.height - 129, 132, 127, 'right', FlxColor.RED)));
 			case FULL:
-				dPad.add(add(buttonUp = createButton(105, FlxG.height - 366, 132, 127, 'up', FlxColor.GREEN)));
+				dPad.add(add(buttonUp = createButton(105, FlxG.height - 366, 132, 127, 'up', FlxColor.LIME)));
 				dPad.add(add(buttonLeft = createButton(0, FlxG.height - 243, 132, 127, 'left', FlxColor.PURPLE)));
 				dPad.add(add(buttonRight = createButton(207, FlxG.height - 243, 132, 127, 'right', FlxColor.RED)));
-				dPad.add(add(buttonDown = createButton(105, FlxG.height - 129, 132, 127, 'down', FlxColor.BLUE)));
+				dPad.add(add(buttonDown = createButton(105, FlxG.height - 129, 132, 127, 'down', FlxColor.CYAN)));
 			case RIGHT_FULL:
-				dPad.add(add(buttonUp = createButton(FlxG.width - 258, FlxG.height - 556, 132, 127, 'up', FlxColor.GREEN)));
+				dPad.add(add(buttonUp = createButton(FlxG.width - 258, FlxG.height - 556, 132, 127, 'up', FlxColor.LIME)));
 				dPad.add(add(buttonLeft = createButton(FlxG.width - 384, FlxG.height - 341, 132, 127, 'left', FlxColor.PURPLE)));
 				dPad.add(add(buttonRight = createButton(FlxG.width - 132, FlxG.height - 341, 132, 127, 'right', FlxColor.RED)));
-				dPad.add(add(buttonDown = createButton(FlxG.width - 258, FlxG.height - 195, 132, 127, 'down', FlxColor.BLUE)));
+				dPad.add(add(buttonDown = createButton(FlxG.width - 258, FlxG.height - 195, 132, 127, 'down', FlxColor.CYAN)));
 			case DUO:
-				dPad.add(add(buttonUp = createButton(105, FlxG.height - 366, 132, 127, 'up', FlxColor.GREEN)));
+				dPad.add(add(buttonUp = createButton(105, FlxG.height - 366, 132, 127, 'up', FlxColor.LIME)));
 				dPad.add(add(buttonLeft = createButton(0, FlxG.height - 243, 132, 127, 'left', FlxColor.PURPLE)));
 				dPad.add(add(buttonRight = createButton(207, FlxG.height - 243, 132, 127, 'right', FlxColor.RED)));
-				dPad.add(add(buttonDown = createButton(105, FlxG.height - 129, 132, 127, 'down', FlxColor.BLUE)));
-				dPad.add(add(buttonUp2 = createButton(FlxG.width - 258, FlxG.height - 556, 132, 127, 'up', FlxColor.GREEN)));
+				dPad.add(add(buttonDown = createButton(105, FlxG.height - 129, 132, 127, 'down', FlxColor.CYAN)));
+				dPad.add(add(buttonUp2 = createButton(FlxG.width - 258, FlxG.height - 556, 132, 127, 'up', FlxColor.LIME)));
 				dPad.add(add(buttonLeft2 = createButton(FlxG.width - 384, FlxG.height - 341, 132, 127, 'left', FlxColor.PURPLE)));
 				dPad.add(add(buttonRight2 = createButton(FlxG.width - 132, FlxG.height - 341, 132, 127, 'right', FlxColor.RED)));
-				dPad.add(add(buttonDown2 = createButton(FlxG.width - 258, FlxG.height - 195, 132, 127, 'down', FlxColor.BLUE)));
+				dPad.add(add(buttonDown2 = createButton(FlxG.width - 258, FlxG.height - 195, 132, 127, 'down', FlxColor.CYAN)));
 			case NONE:
 		}
 
