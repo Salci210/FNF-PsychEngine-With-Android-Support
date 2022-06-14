@@ -242,11 +242,10 @@ class AndroidControlsMenu extends MusicBeatState
 
 	function moveButton(touch:FlxTouch, button:FlxButton):Void
 	{
+		button.x = touch.x - button.width / 2;
+		button.y = touch.y - button.height / 2;
+
 		bindButton = button;
-
-		bindButton.x = touch.x - bindButton.width / 2;
-		bindButton.y = touch.y - bindButton.height / 2;
-
 		buttonIsTouched = true;
 	}
 
